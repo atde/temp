@@ -1,0 +1,7 @@
+#ejemplo1, #ejemplo2, #ejemplo3 {color: blue;}
+#ejemplo1 li > a {color: blue;}
+#ejemplo1 li > em > a {color: blue;}
+ul#ejemplo2 li > a {color: green;}
+a[class]{color: green;}
+
+
