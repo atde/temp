@@ -28,6 +28,10 @@ catty.breath
 catty.meow
 doggy.breath
 doggy.bark
+#=>inspirar, espirar
+#=>Miaaaaaaaaaaau
+#=>inspirar, espirar
+#=>Guauu Guauu
 
 class People
   def greeting
