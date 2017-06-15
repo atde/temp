@@ -1,3 +1,4 @@
+
 class Vehicle
 @@cuenta = 0 
 #variable de clase, sirve dentro de cualquier clase .. 
@@ -29,3 +30,4 @@ bus_1 = Bus.new
 #metodos de clase (son definisods con la palabra self)
 p Car.number_of_vehicles == "This Superclass has created 3 vehicles"
 # => true
+
