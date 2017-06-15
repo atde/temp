@@ -91,7 +91,7 @@ dummy_class = DummyClass.new
 
 #Los setters por convención siempre se escriben con un = al final dando a entender que ese método sobre-escribe una variable. Además esa sintaxis permite utilizarlos de las siguientes dos formas.
 p dummy_class.instance_var=("Bar")
-p dummy_class.instance_var   =    "Baz
+p dummy_class.instance_var   =    "Baz"
 
 
 #Class Variables
@@ -163,6 +163,19 @@ dummy_2 = DummyClass.new
 
 p dummy_1.instance_var
 p dummy_2.instance_var
+
+
+#Scope variable name begins with:
+
+     #global      $
+
+     #constant  [A-Z]
+
+     #class      @@
+
+     #instance   @
+
+     #local     [a-z] or _
 
 
 
