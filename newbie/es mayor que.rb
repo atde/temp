@@ -47,6 +47,7 @@ end
 #test
 katty = Cat.new(2)
 peto = Cat.new(4)
+#instancias, con su atributos
 p katty.es_mayor_que?(peto) == false
 #=>true
 

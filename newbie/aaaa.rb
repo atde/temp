@@ -1,58 +1,36 @@
-class Animal
-  def alive
-    puts "Ser orgánico que vive, siente y se mueve por propio impulso."
-  end
+#pista te la da el nombre del metodo. 
+
+def odd_indexed(arr)
+ array_vacio =[]
+ arr.each_with_index{|valor, posicion | array_vacio << valor if posicion % 2 == 0 } 
+ array_vacio
 end
+p odd_indexed(["uno", "dos", "tres", "cuatro", "cinco"]) == ["uno", "tres", "cinco"]
 
-class Reptile < Animal
-  CooldBlood = "Cold blooded, born on land and with scaly skin"
-  def has_scales?
-   puts CooldBlood
-  end
+def long_strings(arr)
+  arr.select { |num|  num.length > 4 }   
 end
+p long_strings(["rojo", "morado", "azul", "negro", "blanco", "naranja"]) == ["morado", "negro", "blanco", "naranja"]
 
-class Mammal < Animal
-  Milk = "Drink milk when they are a baby and have hair on their body"
-  def warm_blooded?
-    puts Milk
-  end
+
+def start_with_h(arr)
+  arr.select {|letter| letter if letter.include? ?h }
 end
+p start_with_h(["manzana", "naranja", "sandia", "higo", "melon", "platano"]) == "higo"
 
-class Bird < Animal
-  Feathers = "Have feathers and are born out of hard-shelled eggs"
-  def feathers
-   puts Feathers
-  end
+def start_with_h2(arr)
+  arr.select {|letter| letter if letter.index(?h)}
 end
+p start_with_h2(["manzana", "naranja", "sandia", "higo", "melon", "platano"]) #== "higo"
 
-class Fish < Animal
-  Fins = "Vertebrates that live in water and have gills, scales and fins on their body" 
-  def swim
-    puts Fins
-  end
+def capitalize_array(arr)
+  array_vacio = []
+  arr.each_with_index {|valor, posicion | array_vacio << valor.capitalize } 
+  array_vacio
 end
+p capitalize_array(["manuel", "juan", "rodrigo", "ana", "paola"]) == ["Manuel", "Juan", "Rodrigo", "Ana", "Paola"]
 
-class Dog < Mammal
-  Canidae = "Canidae"
-  def perro
-    p Canidae
-  end
+def group_by_starting_letter(arr)
+arr.group_by { |i| }
 end
-
-class Turtle < Reptile
-  Testudines = "Testudines"
-  def tortuga
-    p Testudines
-  end
-end
-
-doggie = Dog.new
-turtuly = Turtle.new
-doggie.alive
-doggie.warm_blooded?
-doggie.perro
-turtuly.alive
-turtuly.has_scales?
-turtuly.tortuga
-
-
+p group_by_starting_letter(["arbol", "amarillo", "angel", "burro", "barco"]) #== {"a"=>["arbol", "amarillo", "angel"], "b"=>["burro", "barco"]}
