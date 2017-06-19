@@ -1,0 +1,179 @@
+html, body, h1, h2, h3, h4 {
+	margin: 0;
+	padding: 0;
+}
+h1 img {
+	display: block;
+}
+img {
+	border: 0;
+}
+a {
+	color: 	#FF1493;
+	font-weight: bold;
+	text-decoration: none;
+	font-size: 16px;
+}
+a:hover {
+	color: 	#FF1493;
+	text-decoration: underline;
+}
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
+.more {
+	text-align: right;
+}
+.clear {
+	clear: both;
+}
+
+body {
+	text-align: center;
+	font: 11px arial, sans-serif;
+	color: 	#000000;
+}
+#wrapper {
+	text-align: left;
+	margin: auto;
+	width: 686px;
+	position: relative;
+}
+
+h1 {
+	position: absolute;
+	background: url(images/18017.jpg) no-repeat;
+	width: 200px;
+	height: 204px;
+	top: 0;
+	left: 0;
+	text-align: center;
+	padding-top: 35px;
+	color: white;
+	font: 32px "Lucida Handwriting", "Lucida Calligraphy", verdana, arial, sans-serif;
+}
+#family {
+	position: absolute;
+	background: url(images/malala.jpg) no-repeat;
+	width: 383px;
+	height: 381px;
+	top: 204px;
+	left: -59px;
+	z-index: 1;
+}
+#nav {
+	width: 200px;
+	position: absolute;
+	top: 585px;
+	left: 0;
+	background: url(images/18017.jpg) repeat-y;
+}
+
+#nav ul {
+	margin: 0;
+	padding: 37px 0 45px 64px;
+	font: 16px "Times new roman", "Lucida Grande", serif;
+}
+#nav li {
+	margin: 11px;
+	padding: 0 0 0 40px;
+	list-style: none;
+}
+#nav a {
+	font-weight: normal;
+	color: white;
+}
+
+#body {
+	position: absolute;
+	width: 427px;
+	top: 0;
+	left: 259px;
+	background: white;
+	overflow: hidden;
+}
+#body .i {
+	padding: 69px 45px 84px 74px;
+}
+
+#body h2 {
+	font: 18px "Times new roman", "Lucida Grande", serif;
+	font-weight: normal;
+	margin-top: 25px;
+}
+
+#body h2 strong {
+	color: #FF1493;
+	font-size: 25px;
+	font-weight: normal;
+}
+#body h2.orange strong {
+	color: #FF1493;
+}
+#body p {
+	margin: 1em 0;
+}
+#body ul {
+	margin: 0;
+	padding: 0;
+}
+#body li {
+	margin: 1em 0;
+	list-style: none;
+	padding: 0 0 0 30px;
+	
+}
+#view {
+	float: left;
+	width: 115px;
+	text-align: center;
+	margin-right: -50px;
+}
+#funtravel {
+	margin-top: 10px;
+}
+#collect {
+	float: left;
+	width: 203px;
+}
+#collect p.dark, #view p.dark {
+	text-align: center;
+	color: #000;
+	font: 20px "Arial narrow", arial, sans-serif;
+	margin-bottom: 2px;
+	margin-top: 3px;
+}
+#collect p.orange, #view p.orange {
+	text-align: right;
+	font: 20px "Arial narrow", arial, sans-serif;
+	margin-top: 2px;
+	margin-bottom: 10px;	color: black;
+  font-style: italic;
+}
+#view p.dark {
+	margin-top: 40px;
+	margin-bottom: 10px;
+}
+#view p.dark a {
+	color: #000;
+	font-weight: normal;
+	text-decoration: none;
+}
+#view p.orange a {
+	color: 	#FF1493;
+	font-weight: normal;
+	text-decoration: none;
+}
+#collect p.other {
+	margin-left: 12px;
+}
+#copyright {
+	text-align: center;
+	clear: both;
+	color: black;
+	padding-top: 15px;
+}
+
