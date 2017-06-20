@@ -2,7 +2,8 @@
 
 Clase Stair
 
-Crea la clase Stair con atributos material y size. Asimismo, define el método larger_size_than? que permite saber si una escalera es más grande que otra. Es importante considerar que el método getter size no debe ser público, de tal manera que si lo tratas de usar en una instancia (stair_one.size) levantará un error.
+Crea la clase Stair con atributos material y size. Asimismo, define el método larger_size_than? que permite saber si una escalera es más grande que otra. 
+Es importante considerar que el método getter size no debe ser público, de tal manera que si lo tratas de usar en una instancia (stair_one.size) levantará un error.
 =end
 
 class Stair
@@ -35,8 +36,8 @@ end
 #test
 metal = Stair.new("Metal", 54)
 wood = Stair.new("Wood", 23)
+stair_one = Stair.new("Metal", 54)
 #instancias, con atributos
 
 p "Well done!" if metal.larger_size_than?(wood) #=> "Well done!"
-stair_one.size #=> undefined local variable or method `stair_one' for main:Object (NameError)
-
+stair_one.size #=> protected method `size' called for #<Stair:0x007fd932087740 @material="Metal", @size=54> (NoMethodError)
