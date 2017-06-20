@@ -8,46 +8,31 @@ Las pruebas no deben modificarse.
 
 
 class SuperSay
+#definimos la clase en este caso es una Super clase.
   def say(text)
-    prepare_text(text)
-  end
-
-  def prepare_text(text)
-    do_something_with(text)
+  #metodo que recibe como parametro un string
+    text
+    #devuelve el string
   end
 end
 
 class HtmlSay < SuperSay
+#clase hija
   def say(text)
-    "<p>" + prepare_text(text) + "</p>"
-  end
-
-  def say(text)
-    prepare_text(text)
-  end
-
-  def prepare_text(text)
-
+  #metodo que recibe como parametro texto
+    "<p>" + super + "</p>"
+    #super ecxtrae el return del metodo de la clase padre y lo modifica
   end
 end
 
 class CssSay < SuperSay
-  def say(text)
-    "<p>" + prepare_text(text) + "</p>"
-  end
-
-  def prepare_text(text)
-    do_something_with(text)
-  end
-
-  def do_something_with(text)
-    text
-  end
+#clase hija que hereda los metodos
 end
 
-doc = SuperSay.new
-style = SuperSay.new
+doc = HtmlSay.new
+style = CssSay.new
+#instancias
 
 #test
-p doc.say("You've refactored") #== "<p>You've refactored</p>"
-p style.say("I like to code") #== "I like to code"
+p doc.say("You've refactored") == "<p>You've refactored</p>"
+p style.say("I like to code") == "I like to code"
