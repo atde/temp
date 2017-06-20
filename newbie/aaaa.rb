@@ -12,16 +12,10 @@ def long_strings(arr)
 end
 p long_strings(["rojo", "morado", "azul", "negro", "blanco", "naranja"]) == ["morado", "negro", "blanco", "naranja"]
 
-
 def start_with_h(arr)
-  arr.select {|letter| letter if letter.include? ?h }
+  arr.detect { |letter| letter.include? ?h }
 end
 p start_with_h(["manzana", "naranja", "sandia", "higo", "melon", "platano"]) == "higo"
-
-def start_with_h2(arr)
-  arr.select {|letter| letter if letter.index(?h)}
-end
-p start_with_h2(["manzana", "naranja", "sandia", "higo", "melon", "platano"]) #== "higo"
 
 def capitalize_array(arr)
   array_vacio = []
@@ -31,6 +25,12 @@ end
 p capitalize_array(["manuel", "juan", "rodrigo", "ana", "paola"]) == ["Manuel", "Juan", "Rodrigo", "Ana", "Paola"]
 
 def group_by_starting_letter(arr)
-arr.group_by { |i| }
+arr.group_by { |i| i.chr }
 end
-p group_by_starting_letter(["arbol", "amarillo", "angel", "burro", "barco"]) #== {"a"=>["arbol", "amarillo", "angel"], "b"=>["burro", "barco"]}
+p group_by_starting_letter(["arbol", "amarillo", "angel", "burro", "barco"]) == {"a"=>["arbol", "amarillo", "angel"], "b"=>["burro", "barco"]}
+
+def number_of_r(arr)
+  arr.count "r"
+end
+
+p number_of_r("ferrocarril") == 4

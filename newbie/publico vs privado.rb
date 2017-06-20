@@ -25,42 +25,11 @@ deposit_account
 
 ¿Cuales de estas variables deben de tener un reader o writer?
 Piensa cual de estas variables deberán poder ser leídas o sobrescritas desde fuera de tu programa.
-
+=end
 
 #Vamos a esconder algo de información.
-#Deberás re-definir el método to_s para que regrese algo como esto:
-class Employee
-#definiendo la clase
- attr_reader :name, :salary,
- attr_writer :email
-
-  def initialize(name, email, salary, deposit_account)
-  #definimos un metodo constructor que va a recivir los atributos de cada instancia.
-  @name = name
-  @email = email
-  @salary = salary
-  @deposit_account = deposit_account
-  #varialbes de instancia
-  end
-
-  def to_s
-   dep = @deposit_account.delete("_")
-   #eleminia los guiones del string
-     (0..dep.lenght - 5).each do |i|
-      d[i] = "*"
-     #recorre el array y llena los primeros 5 numeros con asteriscos. 
-  end
-  "#{@name} <email: #{@email}> acct: #{dep}"
-end
-
-puts employee
-=> Juan Perez <email: juan@gmail.com> acct: 123456512
-
 #En el ejemplo anterior no es muy adecuando estar mostrando la cuenta de depósito del empleado. 
 #Crea un método privado que solamente muestre los últimos cuatro dígitos de este número.
-
-puts employee
-=> Juan Perez <email: juan@gmail.com> acct: *****6512
 
 #El método to_s es el símil del método toString de otros lenguajes de programación. 
 #Este método se utiliza para que nos devuelva una cadena de texto, que suele ser la información más relevante del objeto. 
@@ -71,7 +40,7 @@ puts employee
 #El método to_s es el símil del método toString de otros lenguajes de programación. 
 #Este método se utiliza para que nos devuelva una cadena de texto, que suele ser la información más relevante del objeto. Si haces una clase Dog vacía y llamas puts en una de sus instancias regresará #<Dog:0x007ffd389b7930>. Tu puedes re-definir este método y en nuestro caso, deberá regresar una representación gráfica de nuestro empleado. 
 #Cuando digo re-definir me refiero a que por default todas las clases ya lo tienen, ya que heredan de la clase object (si aún no has visto que quiere decir que una clase hereda de otra, ya lo aprenderás no te preocupes).
-=end
+
 
 class Employee
 #definiendo la clase
