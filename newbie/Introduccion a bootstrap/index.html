@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html lang="esp">
+ <head>
+  <meta charset="utf-8">
+  <title>Introduccion a Bootstrap</title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css" type="text/css" charset="utf-8" />
+ </head>
+ <h1>Introduccion a Bootstrap</h1>
+
+ <body>Bootstrap es un framework de frontend para el desarrollo responsivo que combina HTML, CSS y JS para crear una experiencia más rica al usuario al momento de navegar nuestra página y aplicaciones.
+ <br>
+ Bootstrap usa un sistema de cuadrícula que divide toda la vista en 12 columnas, las cuales se pueden ir adaptando para dar formato utilizando divcomo herramienta principal para su organización.</body>
+
+ <h2>Instalación</h2>
+
+  <p>Para utilizar bootstrap dentro de una página web puedes optar por utilizar un CDN que cargará el CSS y JavaScript que necesita tu proyecto, agregando las siguientes etiquetas en la sección "<head>" 
+  </p>
+
+ <h2>Estructuras Principales</h2>
+  <p>La base de todo el sistema de Bootstrap es organizar los elementos dentro de containers, para lo cual ofrece 2 alternativas:
+    <br>
+    <br>
+     -.container que ofrece una interfaz responsiva con ancho fijo
+    <br>
+     -.container-fluid es una interfaz que ocupa todo el ancho disponible
+    <br>
+    <br>
+
+    Una vez que creamos algunas de estas 2 etiquetas ya estamos utilizando el sistema de Grid, lo siguiente es crear un .row
+    <br>
+    Un .row se refiere a un grupo de columnas horizontales. Puede envolver un conjunto de columnas para mantenerlas asociadas.  
+    <br>
+    Dentro de este .row utilizaremos la clase columna o .col.
+    <br>
+    Existen 4 tipos de .col que se adaptan a diferentes dispositivos:
+    <br>
+    <br>
+    -.col-xs que se activan cuando el ancho disponible es de menos de 768px
+    <br>
+    -.col-sm usado para dispositivos mayores a 768px
+    <br>
+    -.col-md funciona para tamaños de pantalla más grandes que 992px
+    <br>
+    -.col-lg que se utiliza para dispositivos con un ancho mayor a 1200px
+    <br>
+    <br>
+    Puedes encontrar la información de cómo se utilizan estos formatos en el siguiente link: Bootstrap CSS
+    <br>
+    Los div con esta clase pueden utilizar hasta 12 columnas, por lo cual estas pueden ser repartidas en múltiples elementos dependiendo de las necesidades de nuestra vista.
+    <br>
+    En el siguiente ejemplo podrás ver el funcionamiento completo de estas características:</p>
+    <br>
+    <br>
+    <h2>Componentes</h2>
+    <br>
+    <p>Los principales componentes que usaremos en Bootstrap los puedes encontrar en su página de documentación:
+      <br>
+      Puedes ser creativo y anidar elementos uno a dentro del otro, y usar muchos componentes diferentes. Bootstrap Components</p>
+    <br>
+    <h2>Ejercicio</h2>
+    <br>
+    <p>Crea la siguiente estructura utilizando las diferentes clases y componentes de Bootstrap:</p>
+    <img src="images/screen-shot-2017-05-18-at-5-59-35-p-m.png" width="1000" height="500" alt="Pic 1" class="left"/>
+    <br>
+     <h3>Vamos a Resolver el Ejercicio</h3>
+
+    <div class="container">
+    </div>
+
+    <div class="container-fluid">
+
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-8">.col-xs-12 .col-sm-6 .col-md-8</div>
+        <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+      </div>
+      <div class="row">
+        <div class="col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>
+        <div class="col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>
+        <!-- Optional: clear the XS cols if their content doesn't match in height -->
+        <div class="clearfix visible-xs-block"></div>
+        <div class="col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>
+      </div>
+    </div>
+
+</html>
