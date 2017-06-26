@@ -1,0 +1,24 @@
+.container {
+  margin: 0 0 0 150px;
+  width: 720px;
+  padding-left:20px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 2px;
+    padding: 10px;
+    width: 9%;
+    background-color: #d9d9d9;
+    height: 100%; /* Full height */
+    position: fixed; /* Make it stick, even on scroll */
+    overflow: auto; /* Enable scrolling if the sidenav has too much content */
+}
+
+li a{
+  color: black;
+  text-decoration: none;
+}
+
+
+
