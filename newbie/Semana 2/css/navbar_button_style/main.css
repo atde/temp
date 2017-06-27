@@ -3,93 +3,52 @@
   width: 720px;
 }
 
-/*li a{
-  width: 121px;
-  border: 4px solid pink;
-  padding: 0px;
-  margin: 1px;
-  float: left;
-}*/
-
-/*In order to set the width and height of an element correctly in all browsers, you need to know how the box model works.
-
-Important: When you set the width and height properties of an element with CSS, you just set the width and height of the content area. To calculate the full size of an element, you must also add padding, borders and margins.
-
-Assume we want to style a <div> element to have a total width of 350px:
-
-Example
-div {
-    width: 320px;
-    padding: 10px;
-    border: 5px solid gray;
-    margin: 0; 
-}
-Try it Yourself »
-Here is the math:
-320px (width)
-+ 20px (left + right padding)
-+ 10px (left + right border)
-+ 0px (left + right margin)
-= 350px
-The total width of an element should be calculated like this:
-
-Total element width = width + left padding + right padding + left border + right border + left margin + right margin
-
-The total height of an element should be calculated like this:
-
-Total element height = height + top padding + bottom padding + top border + bottom border + top margin + bottom margin
-
-Note for old IE: Internet Explorer 8 and earlier versions, include padding and border in the width property. To fix this problem, add a <!DOCTYPE html> to the HTML page.*/
 
 
 ul{
   list-style-type: none;
-  margin: 0;
-  padding: 0;
+  margin: 20px;
+  padding: 10px;
+  text-align: center;
   overflow: hidden;
+  display: inline-block;
 }
 
 li {
     float: left;
+    padding: 0px; 
+    margin: 1px auto;
+    height: 20px;
     border-right:1px solid white;
+
 }
 
-li:last-child {
-    border-right: none;
-  }
 
-
-
-li a{ display: block;
+li a{ 
   color: black;
-  text-align: center;
   text-decoration: none;
-  
-  background: #bfbfbf;
-  padding: 10px; 
-  margin: 1px;
-  width: 121px;
-  height: 15px;
+  background: -webkit-linear-gradient(#f2f2f2, #d9d9d9); /* For Safari 5.1 to 6.0 */
+  padding: 10px 31.5px;
 }
 
 .last{
-  border-radius: 0px 10px 10px 0px !important;
+  border-radius: 0px 10px 10px 0px;
 }
 
 .first{
-  border-radius: 10px 0px 0px 10px !important;
+  border-radius: 10px 0px 0px 10px;
 }
 
 
-/* Change the link color to #DAA520 (yellow) on hover */
+/* Change the link color to other color on hover */
 li a:hover:not(.active) {
-  background-color: #2a86fb;
-  color: #fbd122;
+  background: -webkit-linear-gradient(#a6a6a6, #808080);
+  color: #ffffff;
 }
 
 /*Add an "active" class to the current link to let the user know which page he/she is on*/
 .active {
-  background-color: #4CAF50;
+  background: -webkit-linear-gradient(#a6a6a6, #808080);
 }
 
 
@@ -102,4 +61,3 @@ header {
   margin: 0 auto;
 }
 
-color degradado ...
