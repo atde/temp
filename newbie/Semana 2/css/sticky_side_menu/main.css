@@ -2,23 +2,45 @@
   margin: 0 0 0 150px;
   width: 720px;
   padding-left:20px;
+
+}
+
+li{
+  border-bottom: 1px solid #b3b3b3;
 }
 
 ul {
-    list-style-type: none;
-    margin: 2px;
-    padding: 10px;
-    width: 9%;
-    background-color: #d9d9d9;
     height: 100%; /* Full height */
-    position: fixed; /* Make it stick, even on scroll */
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    background-color: #d9d9d9;
+    position: fixed; /* Make it stick to the side, even on scroll */
+    border-left: 1px solid #b3b3b3;
     overflow: auto; /* Enable scrolling if the sidenav has too much content */
 }
 
 li a{
+  display: inline-block;
   color: black;
+  padding: 8px 20px;
   text-decoration: none;
+  text-align: left;
 }
 
+h1{
+  position: absolute; /*para que el h1 quede debajo del navbar*/
+  padding-left: 225px;
+
+}
+
+.content{
+  padding-left:225px;
+  margin-top: 70px;
+}
+
+.footer{
+  padding-left:225px;
+}
 
 
