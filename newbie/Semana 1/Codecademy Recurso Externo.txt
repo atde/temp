@@ -1,0 +1,30 @@
+Codecademy Recurso Externo 
+
+Codecademy es una página con varios tutoriales para aprender programación. Es un gran recurso para reforzar y practicar cuando estás empezando y necesitas un poco de ayuda extra. 
+Estos tutoriales llegan a enseñar conceptos avanzados. No te frustres intenta resolverlos aunque no comprendas del todo lo que estás haciendo. Todos los conceptos los aprenderás con la práctica constante que obtienes de manera intensiva durante el curso.
+
+Ruby
+El primer tutorial que te recomendamos es el de Ruby en Codecademy, puedes intentarlo todo o ir haciéndolo por partes.
+Codecademy: Learn Ruby
+https://www.codecademy.com/learn/ruby
+
+HTML y CSS
+Como preparación para ser un desarrollador web también puedes repasar los fundamentos de HTML & CSS.
+Codecademy: Learn HTML & CSS
+Te recomendamos hacer estos tutoriales en Inglés aunque Codecademy tiene la opción para tomar el tutorial en español. Para cambiar el idioma ve al footer (abajo a la derecha).
+https://www.codecademy.com/learn/learn-html-css
+
+Javascript
+Este tutorial es una buena manera de aprender las bases y los fundamentos de este lenguaje, aunque no es conocimiento fundamental para el desarrollo web con Ruby on Rails es una buena idea comprender este lenguaje para ampliar tu rango como programador.
+Codecademy: Learn Javascript
+https://www.codecademy.com/learn/learn-javascript
+
+jQuery
+Una tecnología fundamental para la interacción y experiencia de usuario, en este tutorial aprenderás cómo manipular las vistas web.
+Codecademy: Learn jQuery
+https://www.codecademy.com/learn/jquery
+
+Rails
+Este tutorial ofrece una buena experiencia para acercarse a los comandos y funciones básicas de este framework.
+Codecademy: Learn Rails
+https://www.codecademy.com/learn/learn-rails

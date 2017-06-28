@@ -1,0 +1,13 @@
+Chrome Dev Tools 
+
+Chrome DevTools son un conjunto de herramientas del navegador Google Chrome que te permiten interactuar con el código y todos los elementos que componen una página.
+Una vez que tu página ya está corriendo, te deja inspeccionar y modificar sus elementos en "tiempo real".
+Completa el primer bloque ('Elements') del siguiente tutorial. Es necesario que te registres en la página.
+
+Codeschool: Discover Dev Tools
+https://www.codeschool.com/courses/discover-devtools
+
+Si se te complica comprender los videos, puedes poner subtítulos en español.
+
+Email...elenis_...
+Pword...tem...1
