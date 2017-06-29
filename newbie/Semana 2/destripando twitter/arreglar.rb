@@ -1,5 +1,4 @@
 require 'Nokogiri'
-require "open-uri"
 
 
 class TwitterScrapper
@@ -31,13 +30,15 @@ class TwitterScrapper
     time = @doc.search(".tweet-timestamp")[i].inner_text
     tweets = @doc.search(".js-tweet-text-container")[i].inner_text
     tweets.delete! "\n"
-    retweets = @doc.search(".ProfileTweet-action--retweet")[i].first.inner_text
-    #ret = retweets.split[0]
-    favorites = @doc.search(".ProfileTweet-action--favorite")[i].first.inner_text
-    #fav = favorites.split[0]
+    retweets = @doc.search(".ProfileTweet-action--retweet > span")[i].inner_text
+    rt_s = retweets.delete "retweets"
+    rt_s = rt_s.delete "      \n","\n "
+    
+    favorites = @doc.search(".ProfileTweet-action--favorite")[i].inner_text
+    fv = favorites.delete "      \n","\n "
     puts
     p "  #{time}.: #{tweets}"
-    p "  Retweets: #{ret}, Favorites: #{fav}"
+    p "  Retweets: #{rt_s}, Favorites: #{fv}"
     end
   end
 end

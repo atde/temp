@@ -1,0 +1,38 @@
+ .title {
+     text-align: center;
+    margin: 50px;
+    font-family: 'Bangers';
+    font-size: 40px;
+    color: #80b3ff;
+    text-decoration: underline;
+}
+
+ .intro {
+    font-family: 'Chelsea Market';
+    font-size: 20px;
+    margin: 50px;
+    color: #c18ff0;
+}
+
+.medio{
+    margin: 50px;
+    color: #ff80d5;
+    font-size: 20px;
+    text-shadow: 1px 2px 4px #bfbfbf;
+}
+
+.ultimo{
+    text-align: center;
+    margin: 50px;
+    font-size: 30px;
+    background-color: #80b3ff;
+    padding: 15px;
+    color: white;
+    font-family: 'Parisienne';
+}
+
+.footer{
+    text-align: center;
+    padding: 50px;
+    text-decoration:line-through;
+}
