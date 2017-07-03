@@ -1,0 +1,47 @@
+body{
+  font-family: 'Oranienbaum';
+  color: #1e4839;
+}
+.navbar{
+  color: #1e4839 !important;
+  background-color:#e0ebe8;
+}
+
+.active a{
+  background-color: #e0ebe8 !important;
+  text-decoration: underline solid black;
+}
+
+.navbar a {
+    color: #1e4839 !important;
+}
+
+.navbar-brand{
+  font-size: 30px;
+  font-style: italic;
+}
+
+.jumbotron{
+background-color:#1e4839;
+color: #edf8f4;
+}
+
+.jumbotron h1 {
+  font-size: 90px;
+  font-style: italic;
+}
+
+.jumbotron a{
+  background-color: #2d6c60;
+  color: #edf8f4;
+  letter-spacing: 1px;
+}
+
+.col-sm-6 h3{
+  text-decoration: underline; 
+}
+
+
+
+
+
