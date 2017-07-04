@@ -1,47 +1,156 @@
-body{
-  font-family: 'Oranienbaum';
-  color: #1e4839;
-}
-.navbar{
-  color: #1e4839 !important;
-  background-color:#e0ebe8;
+body{ 
+   font-family: 'Oranienbaum'; 
+   color: #1e4839; 
+} 
+.navbar{ 
+   color: #1e4839 !important; 
+   background-color:#e0ebe8; 
+} 
+
+.active a{ 
+   background-color: #e0ebe8 !important; 
+   text-decoration: underline solid #1e4839; 
+} 
+ 
+.navbar a { 
+   color: #1e4839 !important; 
+} 
+ 
+ 
+.navbar-brand{ 
+   font-size: 30px; 
+   font-style: italic; 
+} 
+ 
+.container {
+  background: #e0ebe8;
+  margin-bottom: 20px;
+  padding-bottom: 50px;
 }
 
-.active a{
-  background-color: #e0ebe8 !important;
-  text-decoration: underline solid black;
+.jumbotron{ 
+ background-color:#1e4839; 
+ color: #edf8f4; 
+} 
+ 
+.jumbotron h1 { 
+   font-size: 90px; 
+   font-style: italic; 
+} 
+ 
+ 
+.jumbotron a{ 
+   background-color: #2d6c60; 
+   color: #edf8f4; 
+   letter-spacing: 1px; 
+} 
+ 
+ .col-sm-6 h3{ 
+   text-decoration: underline;  
+} 
+
+.panel-default{
+    background-color: #edf8f4;
+    letter-spacing: 1px;
 }
 
-.navbar a {
+.panel-default > .panel-heading {
+   background-color: #2d6c60; 
+   color: #edf8f4; 
+   letter-spacing: 1px;
+}
+
+ul{
+   background-color: #edf8f4;  
+   letter-spacing: 1px;
+}
+
+.media.list{
     color: #1e4839 !important;
 }
 
-.navbar-brand{
-  font-size: 30px;
-  font-style: italic;
+.line-separator{
+height:3px;
+background:#1e4839;
+border-bottom:3px solid #1e4839;
 }
 
-.jumbotron{
-background-color:#1e4839;
-color: #edf8f4;
+h2{
+    text-indent: 9%;
+    text-decoration: underline;
 }
 
-.jumbotron h1 {
-  font-size: 90px;
-  font-style: italic;
+.num-comments{
+    text-indent: 75%;
 }
 
-.jumbotron a{
-  background-color: #2d6c60;
-  color: #edf8f4;
-  letter-spacing: 1px;
+.clients{
+    text-indent: 14%;
 }
 
-.col-sm-6 h3{
-  text-decoration: underline; 
+.media{
+    text-indent: 6%;
+}
+
+.img-circle{
+    margin-left: 2%;
+}
+
+.Make-Coment a{
+    margin-left: 75%;
+    color: #edf8f4; 
+    letter-spacing: 1px; 
+    background-color: #2d6c60; 
+}
+
+.container-video {
+  background: #e0ebe8;
+}
+
+video {
+    width: 40%;
+    height: auto;
+}
+
+.info-video{
+  color: #2d6c60;
+  background-color: #e0ebe8;
+  font-size: 32px;
 }
 
 
+video {
+    width: 70%;
+    height: auto;
+    margin-left: 50%;
+}
 
 
+.aside {
+    
+    color: #2d6c60;
+    text-align: left;
+    font-size: 30px;
+    margin-top: 15%;
+    margin-left: 25%;
+}
 
+.move-top{
+
+  position:fixed;
+  bottom:110px;
+  left:88%;
+}
+
+.move-bottom{
+
+  position:fixed;
+  bottom:30px;
+  left:88%;
+}
+
+.footer{
+  margin-top: 3%;
+  text-align: center;
+  margin-bottom: 5%;
+}
