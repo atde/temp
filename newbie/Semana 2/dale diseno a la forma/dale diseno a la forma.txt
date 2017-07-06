@@ -1,0 +1,42 @@
+Dale Diseño A La Forma
+
+Vamos a aprender cómo darle estilo a un formulario de HTML.
+
+Dentro de los archivos que te entreguemos, encontrarás una forma que no tiene mucho estilo.
+
+Objetivos Académicos
+Practicar el uso de CSS
+Conocer características de CSS
+Actividades
+Descargar Archivos
+
+Para este ejercicio te recomendamos revisar los siguientes recursos, pero también busca otros lugares donde puedas aprender más sobre CSS:
+
+CSS3 Previews-http://www.css3.info/preview/
+Documentation for the input element-https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Input
+Styling Texty Inputs Only-https://css-tricks.com/styling-texty-inputs-only/
+
+Intenta conseguir que tu forma de CSS se parezca a la de la siguiente imagen.
+
+
+alt text
+TIPS. Debes de cambiar:
+
+Todos los elementos de la forma están contenidos en una caja centrada.
+La caja de la forma tiene un borde redondeado en las esquinas.
+Los inputs y el botón tienen anchos específicos para que queden alineados.
+Los inputs tienen placeholders.
+El botón tiene un color personalizado y un efecto tipo "glow" gracias a la propiedad box-shadow.
+Recuerda que puedes editar el HTML aunque no tendrás que moverlo mucho.
+
+
+
+# AYUDAME: Refactoriza buscando elegancia 
+def squared_primes(array)
+  array.find_all{|x| (2..x-1).select(){|i| x % i == 0 }.count == 0 }.map{|p| p*p}
+end
+
+# Driver code... no edites este texto. En la consola esto deberá imprimir puros trues
+puts shout_backwards("hello, boot") == "TOOB ,OLLEH!!!"
+puts squared_primes([1, 3, 4, 7, 42]) == [1, 9, 49]
+
